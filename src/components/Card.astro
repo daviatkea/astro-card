@@ -1,0 +1,46 @@
+---
+import CardItem from "./CardItem.astro";
+
+// const data = [
+//   {
+//     title: "Best of the day",
+//     category: "Shots featured",
+//   },
+//   {
+//     title: "Featured streams",
+//     category: "Watch livestreams",
+//   },
+//   {
+//     title: "Subscriptions",
+//     category: "Premium content",
+//   },
+//   {
+//     title: "Creative feed",
+//     category: "Premium feed",
+//   },
+// ];
+
+// const test = Object.fromEntries(data.map((item) => Object.values(item)));
+---
+
+<ul>
+  <CardItem title="Best of the day" category="Shots featured" />
+  <CardItem title="Featured streams" category="Watch livestreams" />
+  <CardItem title="Subscriptions" category="Premium content" />
+  <CardItem title="Creative feed" category="Premium feed" />
+
+  <!-- {data.map((item) => <CardItem {...item} />)} -->
+</ul>
+
+<style>
+  ul {
+    margin: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    list-style-type: none;
+    background-color: #ffffff;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+      0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    width: 400px;
+  }
+</style>
